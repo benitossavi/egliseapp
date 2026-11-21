@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:image" content="https://benitossavi.github.io/egliseapp/icone-512.png">
+<meta name="application-name" content="EgliseApp">
+    <title>EgliseApp</title>
+    <meta name="description" content="EgliseApp : application de gestion d'église (membres, ouvriers, discipolat, finances, mariages, agenda)." />
+    <style>
+        :root {
+            --fond: #f1f5f9;
+            --carte: #ffffff;
+            --texte: #1e293b;
+            --doux: #64748b;
+            --principal: #0000aa;
+            --bordure: #e2e8f0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fond: #0f172a;
+                --carte: #1e293b;
+                --texte: #e2e8f0;
+                --doux: #94a3b8;
+                --principal: #818cf8;
+                --bordure: #334155;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--fond);
+            color: var(--texte);
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: var(--principal);
+            color: #fff;
+            padding: 40px 16px;
+            text-align: center;
+        }
+        header h1 { margin: 0 0 8px; font-size: 2rem; }
+        header p { margin: 0; opacity: 0.9; }
+        header .logo { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 2px 10px rgba(0,0,0,.25); margin-bottom: 12px; }
+        main { max-width: 860px; margin: 0 auto; padding: 24px 16px 40px; }
+        .carte {
+            background: var(--carte);
+            border: 1px solid var(--bordure);
+            border-radius: 12px;
+            padding: 20px 22px;
+            margin-bottom: 18px;
+        }
+        h2 { margin-top: 0; color: var(--principal); font-size: 1.25rem; }
+        .grille {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+        }
+        .module { border-left: 4px solid var(--principal); padding: 4px 0 4px 12px; }
+        .module strong { display: block; }
+        .module span { color: var(--doux); font-size: 0.92rem; }
+        ul { padding-left: 20px; margin: 8px 0; }
+        footer {
+            text-align: center;
+            color: var(--doux);
+            font-size: 0.9rem;
+            padding: 0 16px 32px;
+        }
+        footer a { color: var(--principal); }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="icone-192.png" alt="EgliseApp" width="84" height="84">
+        <h1>EgliseApp</h1>
+        <p>L'application de gestion de votre église</p>
+    </header>
+
+    <main>
+        <section class="carte">
+            <h2>Présentation</h2>
+            <p>
+                EgliseApp est une application web de gestion d'église, installée sur un serveur de
+                l'église cliente. Elle permet de suivre les membres, les ouvriers, le discipolat,
+                les finances, les mariages et l'agenda, pour une ou plusieurs églises d'un même groupe.
+            </p>
+        </section>
+
+        <section class="carte">
+            <h2>Modules</h2>
+            <div class="grille">
+                <div class="module"><strong>Membres</strong><span>Inscription, registre, cartes, certificats de baptême</span></div>
+                <div class="module"><strong>Ouvriers et pasteurs</strong><span>Registres, rencontres, présences</span></div>
+                <div class="module"><strong>Discipolat</strong><span>Cycles, inscriptions, bulletins de notes</span></div>
+                <div class="module"><strong>Finances</strong><span>Trésorerie, cotisations, budget, comptabilité</span></div>
+                <div class="module"><strong>Mariages</strong><span>Fiançailles, mariage religieux, certificats</span></div>
+                <div class="module"><strong>Agenda</strong><span>Calendrier, programmes, rendez-vous</span></div>
+            </div>
+        </section>
+
+        <section class="carte">
+            <h2>Sauvegarde sur Google Drive</h2>
+            <p>
+                EgliseApp peut envoyer chaque jour une copie de sauvegarde de la base de données de
+                l'église dans le Google Drive de l'église, à la demande de son administrateur.
+            </p>
+            <ul>
+                <li>L'administrateur de l'église connecte lui-même le compte Google de son choix.</li>
+                <li>EgliseApp n'accède qu'aux fichiers qu'il a lui-même créés dans ce Drive
+                    (dossier « EgliseApp - Sauvegardes »), jamais aux autres fichiers.</li>
+                <li>Les sauvegardes partent directement du serveur de l'église vers son Drive :
+                    elles ne transitent par aucun serveur de l'éditeur.</li>
+                <li>La connexion peut être retirée à tout moment depuis EgliseApp ou depuis le compte Google.</li>
+            </ul>
+        </section>
+
+        <section class="carte">
+            <h2>Contact</h2>
+            <p>
+                Éditeur : Benoît TOSSAVI — Cotonou, Bénin<br />
+                Courriel : <a href="mailto:benitossavi@ymail.com">benitossavi@ymail.com</a><br />
+                WhatsApp : +229 01 97 12 80 94
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="confidentialite.html">Politique de confidentialité</a> ·
+        <a href="conditions.html">Conditions d'utilisation</a>
+        <br />© EgliseApp
+    </footer>
+</body>
+</html>

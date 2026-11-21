@@ -1,190 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta property="og:image" content="https://benitossavi.github.io/egliseapp/icone-512.png">
-<meta name="application-name" content="EgliseApp">
-    <title>Confidentialité — EgliseApp</title>
-    <meta name="description" content="Politique de confidentialité d'EgliseApp, dont l'utilisation de Google Drive pour les sauvegardes." />
-    <style>
-        :root {
-            --fond: #f1f5f9;
-            --carte: #ffffff;
-            --texte: #1e293b;
-            --doux: #64748b;
-            --principal: #0000aa;
-            --bordure: #e2e8f0;
-        }
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --fond: #0f172a;
-                --carte: #1e293b;
-                --texte: #e2e8f0;
-                --doux: #94a3b8;
-                --principal: #818cf8;
-                --bordure: #334155;
-            }
-        }
-        * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            background: var(--fond);
-            color: var(--texte);
-            font-family: "Segoe UI", Roboto, Arial, sans-serif;
-            line-height: 1.6;
-        }
-        header {
-            background: var(--principal);
-            color: #fff;
-            padding: 32px 16px;
-            text-align: center;
-        }
-        header h1 { margin: 0 0 6px; font-size: 1.7rem; }
-        header p { margin: 0; opacity: 0.9; }
-        main { max-width: 860px; margin: 0 auto; padding: 24px 16px 40px; }
-        .carte {
-            background: var(--carte);
-            border: 1px solid var(--bordure);
-            border-radius: 12px;
-            padding: 20px 22px;
-            margin-bottom: 18px;
-        }
-        h2 { margin-top: 0; color: var(--principal); font-size: 1.2rem; }
-        ul { padding-left: 20px; margin: 8px 0; }
-        li { margin: 4px 0; }
-        a { color: var(--principal); }
-        .doux { color: var(--doux); font-size: 0.92rem; }
-        footer {
-            text-align: center;
-            color: var(--doux);
-            font-size: 0.9rem;
-            padding: 0 16px 32px;
-        }
-
-        /* ===== Barre du haut : logo + liens (comme GestionFermeApp) ===== */
-        .barre { background: #00008a; color: #fff; padding: 12px 16px; }
-        .barre-bloc { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-        .barre-marque { display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; font-size: 1.15rem; }
-        .barre-marque img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; }
-        .barre nav { display: flex; gap: 18px; flex-wrap: wrap; }
-        .barre nav a { color: #fff; text-decoration: none; opacity: .9; }
-        .barre nav a:hover { opacity: 1; text-decoration: underline; }
-        .barre nav a.actif { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
-        @media (max-width: 560px) { .barre-bloc { justify-content: center; } }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta property="og:image" content="https://benitossavi.github.io/images/icone-512.png">
+<meta name="application-name" content="SchoolApp">
+<title>SchoolApp — Règles de confidentialité</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="barre"><div class="barre-bloc">
-        <a class="barre-marque" href="index.html"><img src="icone-192.png" alt="" width="40" height="40">EgliseApp</a>
-        <nav><a href="confidentialite.html" class="actif">Confidentialité</a><a href="conditions.html">Conditions</a></nav>
-    </div></div>
-    <header>
-        <h1>Politique de confidentialité</h1>
-        <p>EgliseApp — mise à jour le 29 octobre 2026</p>
-    </header>
+<header><div class="bloc">
+  <a class="marque" href="index.html"><img src="images/icone-192.png" alt="" width="40" height="40">SchoolApp</a>
+  <nav><a href="confidentialite.html">Confidentialité</a><a href="conditions.html">Conditions</a></nav>
+</div></header>
+<main><div class="carte">
+  <h1>Règles de confidentialité</h1>
+  <p class="maj">Dernière mise à jour : 24 octobre 2026</p>
 
-    <main>
-        <section class="carte">
-            <h2>1. Qui sommes-nous</h2>
-            <p>
-                EgliseApp est une application de gestion d'église éditée par Benoît TOSSAVI
-                (Cotonou, Bénin), ci-après « l'éditeur ». Elle est installée sur un serveur
-                appartenant à l'église cliente ou choisi par elle.
-            </p>
-        </section>
+  <h2>1. Qui sommes-nous</h2>
+  <p>SchoolApp est un logiciel de gestion scolaire développé par Benoît TOSSAVI (Bénin) et installé
+     sur le serveur de chaque établissement client. Contact :
+     <a href="mailto:benitossavi@ymail.com">benitossavi@ymail.com</a>.</p>
 
-        <section class="carte">
-            <h2>2. Les données de l'église restent chez l'église</h2>
-            <p>
-                Les informations saisies dans EgliseApp (membres, ouvriers, discipolat, finances,
-                mariages, agenda…) sont enregistrées dans la base de données du serveur de l'église.
-                L'éditeur n'y a pas accès, sauf intervention de maintenance demandée et autorisée
-                par l'église. Ces données ne sont ni vendues, ni louées, ni cédées à quiconque.
-            </p>
-        </section>
+  <h2>2. Où sont les données de l'école</h2>
+  <p>Les données gérées par SchoolApp (élèves, parents, personnel, notes, paiements...) sont
+     enregistrées dans la base de données installée <b>sur le serveur de l'école</b>. L'école en est
+     responsable. Le développeur de SchoolApp ne reçoit pas ces données et n'y a pas accès.</p>
 
-        <section class="carte">
-            <h2>3. Sauvegarde sur Google Drive</h2>
-            <p>
-                Si l'administrateur de l'église le décide, EgliseApp envoie chaque jour une copie
-                de sauvegarde de la base de données dans le Google Drive d'un compte choisi par l'église.
-            </p>
-            <p><strong>Données Google utilisées</strong></p>
-            <ul>
-                <li><strong>Adresse e-mail du compte Google connecté</strong> (autorisations
-                    « openid » et « userinfo.email ») : affichée dans EgliseApp pour indiquer sur
-                    quel compte partent les sauvegardes.</li>
-                <li><strong>Accès aux fichiers créés par EgliseApp</strong> (autorisation
-                    « drive.file ») : créer le dossier « EgliseApp - Sauvegardes », y déposer
-                    les fichiers de sauvegarde et supprimer les plus anciens au-delà du nombre
-                    choisi par l'église.</li>
-            </ul>
-            <p><strong>Ce qu'EgliseApp ne fait pas</strong></p>
-            <ul>
-                <li>EgliseApp ne voit, ne lit, ne modifie et ne supprime <strong>aucun autre fichier</strong>
-                    du Google Drive : l'autorisation « drive.file » ne donne accès qu'aux fichiers
-                    créés par l'application elle-même.</li>
-                <li>Les sauvegardes partent <strong>directement du serveur de l'église vers son Drive</strong> :
-                    elles ne transitent par aucun serveur de l'éditeur.</li>
-                <li>Les données Google ne sont utilisées pour aucune autre fin (pas de publicité,
-                    pas de profilage, pas d'entraînement de modèles d'intelligence artificielle),
-                    ne sont transmises à aucun tiers, et ne sont pas lues par des personnes.</li>
-            </ul>
-            <p><strong>Conservation et protection</strong></p>
-            <ul>
-                <li>Le jeton d'autorisation fourni par Google est <strong>chiffré</strong> avant d'être
-                    enregistré dans la base de données du serveur de l'église.</li>
-                <li>Il est effacé dès que l'administrateur clique sur « Déconnecter » dans
-                    EgliseApp (Paramètres &gt; Sauvegarde cloud).</li>
-                <li>L'accès peut aussi être retiré à tout moment depuis le compte Google :
-                    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
-            </ul>
-            <p class="doux">
-                L'utilisation et le transfert par EgliseApp des informations reçues des API Google
-                respectent les
-                <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">règles
-                relatives aux données utilisateur des services d'API Google</a>
-                (Google API Services User Data Policy), y compris les exigences d'utilisation limitée
-                (Limited Use requirements).
-            </p>
-        </section>
+  <h2>3. Sauvegarde sur Google Drive ou OneDrive (facultative)</h2>
+  <p>L'école peut choisir d'envoyer chaque jour une sauvegarde de sa base dans <b>son propre</b>
+     compte Google Drive ou Microsoft OneDrive. Pour cela, un responsable de l'école connecte le
+     compte et donne son accord sur la page d'autorisation de Google ou de Microsoft.</p>
+  <ul>
+    <li><b>Accès demandé à Google :</b> l'adresse e-mail du compte (pour afficher quel compte est
+        connecté) et l'accès aux <b>seuls fichiers créés par SchoolApp</b> dans Google Drive
+        (autorisation « drive.file »). SchoolApp ne peut ni voir, ni lire, ni modifier les autres
+        fichiers du Drive.</li>
+    <li><b>Accès demandé à Microsoft :</b> l'adresse e-mail du compte et l'accès aux fichiers du
+        OneDrive, utilisé uniquement pour créer le dossier « SchoolApp - Sauvegardes », y déposer les
+        sauvegardes et supprimer les plus anciennes sauvegardes de SchoolApp dans ce dossier.</li>
+    <li><b>Ce que fait SchoolApp :</b> créer ce dossier, y envoyer les fichiers de sauvegarde, et
+        supprimer les plus anciennes sauvegardes de SchoolApp au-delà du nombre choisi par l'école.</li>
+    <li><b>Ce que SchoolApp ne fait pas :</b> lire ou modifier les autres fichiers du compte, envoyer
+        des e-mails, partager les fichiers, ou transmettre ces informations à quiconque.</li>
+    <li><b>Conservation :</b> l'autorisation de connexion est conservée <b>chiffrée sur le serveur
+        de l'école</b>. Elle n'est jamais envoyée au développeur de SchoolApp.</li>
+    <li><b>Retrait de l'accès :</b> à tout moment, depuis SchoolApp (bouton « Déconnecter ») ou
+        depuis le compte : <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+        (Google) ou <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a>
+        (Microsoft).</li>
+  </ul>
+  <p>L'utilisation des informations reçues des API Google respecte le
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Règlement sur les données
+     utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée.</p>
 
-        <section class="carte">
-            <h2>4. Abonnement et paiement</h2>
-            <p>
-                Pour le paiement de l'abonnement, EgliseApp transmet au serveur de licences de
-                l'éditeur : l'identifiant technique de l'installation, le numéro et le nom de
-                l'église, et la formule choisie. Ces informations servent uniquement à établir la
-                commande, à vérifier le paiement et à délivrer le code d'activation.
-            </p>
-            <p>
-                Le paiement lui-même est traité par <strong>FedaPay</strong> : EgliseApp et l'éditeur
-                ne reçoivent ni numéro de carte, ni code secret de compte mobile money.
-            </p>
-        </section>
+  <h2>4. Paiements en ligne (facultatif)</h2>
+  <p>Si l'école active le paiement par mobile money, les paiements sont traités par le prestataire de
+     paiement choisi par l'école, selon ses propres règles de confidentialité.</p>
 
-        <section class="carte">
-            <h2>5. Vos droits</h2>
-            <p>
-                L'église peut à tout moment déconnecter le compte Google, supprimer les sauvegardes
-                de son Drive, ou demander à l'éditeur toute information sur les données le concernant.
-            </p>
-        </section>
-
-        <section class="carte">
-            <h2>6. Contact</h2>
-            <p>
-                Benoît TOSSAVI — Cotonou, Bénin<br />
-                Courriel : <a href="mailto:benitossavi@ymail.com">benitossavi@ymail.com</a><br />
-                WhatsApp : +229 01 97 12 80 94
-            </p>
-        </section>
-    </main>
-
-    <footer>© EgliseApp — Benoît TOSSAVI</footer>
+  <h2>5. Vos droits</h2>
+  <p>Pour consulter, corriger ou supprimer des informations vous concernant dans SchoolApp, adressez-vous
+     à l'établissement scolaire concerné, qui gère ces données. Pour toute question sur ces règles :
+     <a href="mailto:benitossavi@ymail.com">benitossavi@ymail.com</a>.</p>
+</div></main>
+<footer>© SchoolApp — <a href="index.html">Accueil</a> · <a href="conditions.html">Conditions d'utilisation</a></footer>
 </body>
 </html>

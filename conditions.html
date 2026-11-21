@@ -1,53 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="images/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<meta property="og:image" content="https://benitossavi.github.io/images/icone-512.png">
-<meta name="application-name" content="SchoolApp">
-<title>SchoolApp — Conditions d'utilisation</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:image" content="https://benitossavi.github.io/egliseapp/icone-512.png">
+<meta name="application-name" content="EgliseApp">
+    <title>Conditions d'utilisation — EgliseApp</title>
+    <meta name="description" content="Conditions d'utilisation d'EgliseApp : abonnement par église, essai, lecture seule, sauvegardes." />
+    <style>
+        :root {
+            --fond: #f1f5f9;
+            --carte: #ffffff;
+            --texte: #1e293b;
+            --doux: #64748b;
+            --principal: #0000aa;
+            --bordure: #e2e8f0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fond: #0f172a;
+                --carte: #1e293b;
+                --texte: #e2e8f0;
+                --doux: #94a3b8;
+                --principal: #818cf8;
+                --bordure: #334155;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: var(--fond);
+            color: var(--texte);
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: var(--principal);
+            color: #fff;
+            padding: 32px 16px;
+            text-align: center;
+        }
+        header h1 { margin: 0 0 6px; font-size: 1.7rem; }
+        header p { margin: 0; opacity: 0.9; }
+        main { max-width: 860px; margin: 0 auto; padding: 24px 16px 40px; }
+        .carte {
+            background: var(--carte);
+            border: 1px solid var(--bordure);
+            border-radius: 12px;
+            padding: 20px 22px;
+            margin-bottom: 18px;
+        }
+        h2 { margin-top: 0; color: var(--principal); font-size: 1.2rem; }
+        ul { padding-left: 20px; margin: 8px 0; }
+        li { margin: 4px 0; }
+        a { color: var(--principal); }
+        footer {
+            text-align: center;
+            color: var(--doux);
+            font-size: 0.9rem;
+            padding: 0 16px 32px;
+        }
+
+        /* ===== Barre du haut : logo + liens (comme GestionFermeApp) ===== */
+        .barre { background: #00008a; color: #fff; padding: 12px 16px; }
+        .barre-bloc { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+        .barre-marque { display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; font-size: 1.15rem; }
+        .barre-marque img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; }
+        .barre nav { display: flex; gap: 18px; flex-wrap: wrap; }
+        .barre nav a { color: #fff; text-decoration: none; opacity: .9; }
+        .barre nav a:hover { opacity: 1; text-decoration: underline; }
+        .barre nav a.actif { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
+        @media (max-width: 560px) { .barre-bloc { justify-content: center; } }
+    </style>
 </head>
 <body>
-<header><div class="bloc">
-  <a class="marque" href="index.html"><img src="images/icone-192.png" alt="" width="40" height="40">SchoolApp</a>
-  <nav><a href="confidentialite.html">Confidentialité</a><a href="conditions.html">Conditions</a></nav>
-</div></header>
-<main><div class="carte">
-  <h1>Conditions d'utilisation</h1>
-  <p class="maj">Dernière mise à jour : 24 octobre 2026</p>
+    <div class="barre"><div class="barre-bloc">
+        <a class="barre-marque" href="index.html"><img src="icone-192.png" alt="" width="40" height="40">EgliseApp</a>
+        <nav><a href="confidentialite.html">Confidentialité</a><a href="conditions.html" class="actif">Conditions</a></nav>
+    </div></div>
+    <header>
+        <h1>Conditions d'utilisation</h1>
+        <p>EgliseApp — mise à jour le 29 octobre 2026</p>
+    </header>
 
-  <h2>1. Objet</h2>
-  <p>SchoolApp est un logiciel de gestion scolaire mis à la disposition des établissements par
-     abonnement. Il est installé sur le serveur de l'établissement.</p>
+    <main>
+        <section class="carte">
+            <h2>1. Objet</h2>
+            <p>
+                Les présentes conditions encadrent l'utilisation d'EgliseApp, application de gestion
+                d'église éditée par Benoît TOSSAVI (Cotonou, Bénin), ci-après « l'éditeur ».
+                Lorsqu'un contrat d'abonnement a été signé avec l'église, ce contrat prévaut
+                sur les présentes conditions.
+            </p>
+        </section>
 
-  <h2>2. Abonnement</h2>
-  <p>L'utilisation de SchoolApp nécessite un abonnement en cours de validité, activé par un code
-     fourni après paiement. Les formules et tarifs sont communiqués à l'établissement.</p>
+        <section class="carte">
+            <h2>2. Abonnement par église</h2>
+            <ul>
+                <li>Une même installation peut regrouper plusieurs églises (Sous-Groupes).
+                    <strong>Chaque église</strong> dispose de son propre abonnement.</li>
+                <li>Chaque nouvelle église bénéficie d'une <strong>période d'essai de 30 jours</strong>,
+                    accordée une seule fois.</li>
+                <li>L'abonnement se renouvelle depuis EgliseApp (Paramètres &gt; Abonnement) :
+                    paiement en ligne par mobile money ou carte via FedaPay, ou code d'activation
+                    remis par l'éditeur après un paiement direct.</li>
+                <li>Le paiement prolonge l'abonnement de la durée de la formule choisie, à partir
+                    de la date d'expiration en cours si elle n'est pas dépassée.</li>
+                <li>Les sommes versées ne sont pas remboursables, sauf erreur de paiement constatée.</li>
+            </ul>
+        </section>
 
-  <h2>3. Responsabilités de l'établissement</h2>
-  <ul>
-    <li>Gérer les comptes de ses utilisateurs et garder leurs mots de passe confidentiels.</li>
-    <li>Saisir des informations exactes et respecter la réglementation sur les données personnelles
-        des élèves, des parents et du personnel.</li>
-    <li>Maintenir le serveur allumé, protégé et sauvegardé. La sauvegarde sur Google Drive ou OneDrive
-        proposée par SchoolApp est facultative et se fait sur le compte de l'établissement.</li>
-  </ul>
+        <section class="carte">
+            <h2>3. Après l'expiration</h2>
+            <ul>
+                <li>Pendant les <strong>15 jours</strong> qui suivent l'expiration, EgliseApp reste
+                    utilisable normalement, avec un message de rappel.</li>
+                <li>Ensuite, l'église passe en <strong>lecture seule</strong> : ses utilisateurs peuvent
+                    toujours se connecter et consulter leurs données, mais ne peuvent plus rien saisir,
+                    modifier, supprimer, exporter ou imprimer.</li>
+                <li>Les données ne sont <strong>jamais supprimées</strong> pour défaut de paiement.
+                    Le renouvellement rétablit immédiatement l'accès complet.</li>
+                <li>Les autres églises de la même installation, si elles sont à jour, ne sont pas concernées.</li>
+            </ul>
+        </section>
 
-  <h2>4. Services de Google et de Microsoft</h2>
-  <p>La sauvegarde dans le cloud utilise les services de Google ou de Microsoft, soumis à leurs propres
-     conditions. L'établissement peut retirer l'accès à tout moment.</p>
+        <section class="carte">
+            <h2>4. Responsabilités de l'église</h2>
+            <ul>
+                <li>L'église est responsable des données qu'elle saisit, notamment des données
+                    personnelles de ses membres, et de leur usage conforme à la loi.</li>
+                <li>Elle veille à la confidentialité des identifiants de ses utilisateurs et attribue
+                    les rôles avec soin.</li>
+                <li>Elle assure le bon fonctionnement du serveur sur lequel EgliseApp est installé
+                    (alimentation électrique, accès Internet, sécurité physique).</li>
+            </ul>
+        </section>
 
-  <h2>5. Assistance et évolutions</h2>
-  <p>Le développeur assure l'assistance et fournit les mises à jour de SchoolApp pendant la durée de
-     l'abonnement.</p>
+        <section class="carte">
+            <h2>5. Sauvegardes</h2>
+            <ul>
+                <li>EgliseApp réalise chaque soir une sauvegarde locale sur le serveur de l'église.</li>
+                <li>L'église peut en plus activer la sauvegarde quotidienne sur <strong>son propre</strong>
+                    Google Drive ; elle reste titulaire de ce compte et responsable de son mot de passe.
+                    Voir la <a href="confidentialite.html">politique de confidentialité</a>.</li>
+                <li>Il est recommandé de vérifier régulièrement que les sauvegardes sont bien
+                    réalisées (Paramètres &gt; Sauvegarde cloud).</li>
+            </ul>
+        </section>
 
-  <h2>6. Contact</h2>
-  <p>Benoît TOSSAVI — <a href="mailto:benitossavi@ymail.com">benitossavi@ymail.com</a></p>
-</div></main>
-<footer>© SchoolApp — <a href="index.html">Accueil</a> · <a href="confidentialite.html">Confidentialité</a></footer>
+        <section class="carte">
+            <h2>6. Mises à jour et assistance</h2>
+            <p>
+                Pendant l'abonnement, l'éditeur fournit les mises à jour d'EgliseApp, installées
+                après validation par l'administrateur de l'installation, ainsi qu'une assistance par
+                WhatsApp ou courriel aux heures ouvrables.
+            </p>
+        </section>
+
+        <section class="carte">
+            <h2>7. Continuité en cas d'arrêt de l'éditeur</h2>
+            <p>
+                Si l'éditeur cessait définitivement son activité, il s'engage à diffuser une clé de
+                libération qui rend EgliseApp utilisable sans limite de durée, afin que les églises
+                gardent l'usage de l'application et de leurs données.
+            </p>
+        </section>
+
+        <section class="carte">
+            <h2>8. Limitation de responsabilité</h2>
+            <p>
+                L'éditeur apporte le plus grand soin au bon fonctionnement d'EgliseApp, mais ne
+                peut être tenu responsable des pertes de données dues à une panne du serveur de
+                l'église, à l'absence de sauvegarde, à une erreur de manipulation ou à un usage
+                non conforme de l'application. Sa responsabilité est en tout état de cause limitée
+                au montant de l'abonnement payé pour la période concernée.
+            </p>
+        </section>
+
+        <section class="carte">
+            <h2>9. Droit applicable et contact</h2>
+            <p>
+                Les présentes conditions sont soumises au droit béninois. En cas de différend, les
+                parties rechercheront d'abord une solution amiable.
+            </p>
+            <p>
+                Benoît TOSSAVI — Cotonou, Bénin<br />
+                Courriel : <a href="mailto:benitossavi@ymail.com">benitossavi@ymail.com</a><br />
+                WhatsApp : +229 01 97 12 80 94
+            </p>
+        </section>
+    </main>
+
+    <footer>© EgliseApp — Benoît TOSSAVI</footer>
 </body>
 </html>

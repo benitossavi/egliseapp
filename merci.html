@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:image" content="https://benitossavi.github.io/egliseapp/icone-512.png">
+<meta name="application-name" content="EgliseApp">
+    <title>Paiement EgliseApp</title>
+    <style>
+        :root {
+            --fond: #f1f5f9;
+            --carte: #ffffff;
+            --texte: #1e293b;
+            --doux: #64748b;
+            --principal: #0000aa;
+            --succes: #16a34a;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --fond: #0f172a;
+                --carte: #1e293b;
+                --texte: #e2e8f0;
+                --doux: #94a3b8;
+                --principal: #818cf8;
+                --succes: #4ade80;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: var(--fond);
+            color: var(--texte);
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        }
+        main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+        .carte {
+            width: 100%;
+            max-width: 520px;
+            background: var(--carte);
+            border-radius: 14px;
+            padding: 32px 24px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+        .coche {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 16px;
+            border-radius: 50%;
+            background: var(--succes);
+            color: #fff;
+            font-size: 40px;
+            line-height: 72px;
+        }
+        h1 { margin: 0 0 8px; font-size: 1.5rem; color: var(--principal); }
+        p { margin: 10px 0; line-height: 1.5; }
+        .etapes {
+            text-align: left;
+            margin: 20px 0 0;
+            padding: 16px 20px;
+            border-radius: 10px;
+            background: var(--fond);
+        }
+        .etapes li { margin: 6px 0; }
+        .doux { color: var(--doux); font-size: 0.9rem; margin-top: 20px; }
+        /* ===== Barre du haut : logo + liens (comme les autres pages) ===== */
+        .barre { background: #00008a; color: #fff; padding: 12px 16px; }
+        .barre-bloc { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+        .barre-marque { display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; font-size: 1.15rem; }
+        .barre-marque img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; }
+        .barre nav { display: flex; gap: 18px; flex-wrap: wrap; }
+        .barre nav a { color: #fff; text-decoration: none; opacity: .9; }
+        .barre nav a:hover { opacity: 1; text-decoration: underline; }
+        @media (max-width: 560px) { .barre-bloc { justify-content: center; } }
+    </style>
+</head>
+<body>
+    <div class="barre"><div class="barre-bloc">
+        <a class="barre-marque" href="index.html"><img src="icone-192.png" alt="" width="40" height="40">EgliseApp</a>
+        <nav><a href="confidentialite.html">Confidentialité</a><a href="conditions.html">Conditions</a></nav>
+    </div></div>
+    <main>
+    <div class="carte">
+        <div class="coche" aria-hidden="true">&#10003;</div>
+        <h1>Merci pour votre paiement</h1>
+        <p>Votre paiement de l'abonnement <strong>EgliseApp</strong> a bien été transmis.</p>
+
+        <ol class="etapes">
+            <li>Revenez dans <strong>EgliseApp</strong> (vous pouvez fermer cet onglet).</li>
+            <li>L'abonnement de votre église est prolongé <strong>automatiquement</strong>, en général en moins de deux minutes.</li>
+            <li>Pour accélérer : <strong>Paramètres &gt; Abonnement</strong>, puis le bouton <strong>« J'ai payé »</strong>.</li>
+        </ol>
+
+        <p class="doux">
+            Un souci ? Contactez-nous sur WhatsApp au +229 01 97 12 80 94,
+            en indiquant le nom de votre église.
+        </p>
+    </div>
+    </main>
+</body>
+</html>
